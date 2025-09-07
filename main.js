@@ -74,3 +74,16 @@ for(let i = 0; i < qualifiedFighters.length; i+=2){
 console.log("-------------------------------")
 console.log("Tabella che mostra i vincitori di ogni incontro")
 console.table(winnerFighters)
+
+
+
+
+console.log("-------------------------------")
+console.log("=== FASE 5: Premiazione - Podio ===")
+
+winnerFighters.sort((a,b) => {
+    return b.powerAfterTraining - a.powerAfterTraining
+})
+//una volta ordinati in maniera decrescente con il metodo slice, accorcio l'array affinchè ci siano solo i primi tre elementi (i primi tre classificati).
+let podio = winnerFighters.slice(0, 3)
+console.table(podio)
