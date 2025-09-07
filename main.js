@@ -48,3 +48,29 @@ let qualifiedFighters = copyFighters.filter((f) => f.powerAfterTraining > 2000)
 console.table(qualifiedFighters)
 
 
+
+console.log("=== FASE 4: Combattimento ===")
+//creiamo il nuovo combattente che prenderà parte solo se sono dispari i qualificati.
+let newFighter = {name: "Robot", powerAfterTraining: 4000, weapon:{name: "Laser", power: 100}}
+
+if(qualifiedFighters.length % 2 !== 0){
+    qualifiedFighters.push(newFighter);
+}
+let winnerFighters = [];
+
+for(let i = 0; i < qualifiedFighters.length; i+=2){
+    if(qualifiedFighters[i].powerAfterTraining > qualifiedFighters[i + 1].powerAfterTraining){
+        console.log(`Vince il combattimento ${qualifiedFighters[i].name} contro ${qualifiedFighters[i + 1].name}`)
+        winnerFighters.push(qualifiedFighters[i])
+    } else if(qualifiedFighters[i].powerAfterTraining < qualifiedFighters[i + 1].powerAfterTraining){
+        console.log(`Vince il combattimento ${qualifiedFighters[i + 1].name} contro ${qualifiedFighters[i].name}`)
+         winnerFighters.push(qualifiedFighters[i + 1])
+    }else{
+        console.log(`Vince il combattimento ${qualifiedFighters[i].name} contro ${qualifiedFighters[i + 1].name} sfruttando il fattore casa.`)
+         winnerFighters.push(qualifiedFighters[i])
+    }
+    
+}
+console.log("-------------------------------")
+console.log("Tabella che mostra i vincitori di ogni incontro")
+console.table(winnerFighters)
