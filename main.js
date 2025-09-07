@@ -23,6 +23,6 @@ copyFighters.forEach(f => {
     copyWeapons.splice(index, 1)
 
 })
-//mostra in console l'output sotto forma di tabella.
+//mostra in console l'output sotto forma di tabella
 console.table(copyFighters)
 
