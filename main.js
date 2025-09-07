@@ -38,3 +38,13 @@ copyFighters.forEach(f => {
 
 console.table(copyFighters)
 
+
+
+
+console.log("=== FASE 3: Qualificazione ===")
+
+let qualifiedFighters = copyFighters.filter((f) => f.powerAfterTraining > 2000)
+
+console.table(qualifiedFighters)
+
+
