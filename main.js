@@ -11,10 +11,11 @@ const randomGenerate = (min, max) => {
 //FASE 1. Assegno ad ogni combattente una proprietà weapon, dove salvare la sua arma casuale.
 copyFighters.forEach(f => {
     f.weapon = "";
+    f.powerAfterTraining = f.power;
 })
 
 //Creo logica per assegnare ad ogni combattente un'arma casuale.
-console.log("FASE 1: scelta dell'arma...")
+console.log("=== FASE 1: scelta dell'arma ===")
 copyFighters.forEach(f => {
     let index = randomGenerate(0, copyWeapons.length - 1);
 
@@ -24,5 +25,16 @@ copyFighters.forEach(f => {
 
 })
 //mostra in console l'output sotto forma di tabella
+console.table(copyFighters)
+
+
+console.log("=== FASE 2: Allenamento ===")
+
+copyFighters.forEach(f => {
+    let increment = randomGenerate(1, 100);
+    f.powerAfterTraining = f.power * increment;
+
+})
+
 console.table(copyFighters)
 
