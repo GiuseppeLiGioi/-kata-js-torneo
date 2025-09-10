@@ -213,3 +213,14 @@ podio.forEach((f) => {
 })
 
 fase5Section.appendChild(table5)
+
+
+
+
+let startBtn = document.getElementById("startBtn")
+let resetBtn = document.getElementById("resetBtn")
+
+
+startBtn.addEventListener("click", () =>{
+    
+})
