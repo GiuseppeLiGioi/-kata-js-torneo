@@ -185,7 +185,7 @@ let arrayFirstRow5 = ["Nome", "Potenza", "Arma", "Potenza post allenamento"];
 arrayFirstRow5.forEach((colName) => {
 let th = document.createElement("th")
 th.textContent = colName
-firstRow5.appendChild(th)
+firstRow5  .appendChild(th)
 })
 table5.appendChild(firstRow5)
 
