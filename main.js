@@ -103,19 +103,12 @@ function startTournament() {
 
 
 function resetTournament() {
-    let fase1Section = document.getElementById("fase1")
-    let fase2Section = document.getElementById("fase2")
-    let fase3Section = document.getElementById("fase3")
-    let fase4Section = document.getElementById("fase4")
-    let fase5Section = document.getElementById("fase5")
     copyFighters = fighters.map(f => ({ name: f.name, power: f.power }))
     copyWeapons = weapons.map(w => ({ name: w.name, power: w.power }))
     qualifiedFighters = [];
     winnerFighters = [];
     podio = [];
-    fase1Section.innerHTML = "";
-    fase2Section.innerHTML = "";
-    fase3Section.innerHTML = "";
-    fase4Section.innerHTML = "";
-    fase5Section.innerHTML = "";
+    let tables = document.querySelectorAll(".table-tournament")
+    tables.forEach((t) => t.innerHTML = "");
+  
 }

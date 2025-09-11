@@ -3,6 +3,7 @@ function renderTables(){
     let fase1Section = document.getElementById("fase1")
     
     let table1 = document.createElement("table")
+    table1.className = "table-tournament";
     
     let firstRow = document.createElement("tr")
     
@@ -42,6 +43,7 @@ function renderTables(){
     let fase2Section = document.getElementById("fase2")
     
     let table2 = document.createElement("table")
+    table2.className = "table-tournament";
     
     let firstRow2 = document.createElement("tr")
     let arrayFirstRow2 = ["Nome", "Potenza", "Arma", "Potenza post allenamento"];
@@ -84,6 +86,7 @@ function renderTables(){
     let fase3Section = document.getElementById("fase3")
     
     let table3 = document.createElement("table")
+    table3.className = "table-tournament";
     
     let firstRow3 = document.createElement("tr")
     let arrayFirstRow3 = ["Nome", "Potenza", "Arma", "Potenza post allenamento"];
@@ -131,6 +134,7 @@ function renderTables(){
     let fase4Section = document.getElementById("fase4")
     
     let table4 = document.createElement("table")
+    table4.className = "table-tournament";
     
     let firstRow4 = document.createElement("tr")
     let arrayFirstRow4 = ["Nome", "Potenza", "Arma", "Potenza post allenamento"];
@@ -180,6 +184,7 @@ function renderTables(){
     let fase5Section = document.getElementById("fase5")
     
     let table5 = document.createElement("table")
+    table5.className = "table-tournament";
     
     let firstRow5 = document.createElement("tr")
     let arrayFirstRow5 = ["Nome", "Potenza", "Arma", "Potenza post allenamento"];
