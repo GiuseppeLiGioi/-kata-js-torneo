@@ -26,10 +26,10 @@ Il progetto è stato realizzato usando **JavaScript**, **DOM manipulation** e **
 ---
 
 ## 🛠️ Tecnologie
-- **HTML5**  
-- **CSS3**  
-- **JavaScript (vanilla)**  
-- Console del browser per debug e test  
+- **HTML**  
+- **CSS**  
+- **JavaScript**  
+- Console del browser per verificare il corretto funzionamento delle logiche implementate
 
 ---
 
